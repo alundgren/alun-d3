@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AlunTv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+        #shows > div {
+            height:5em;
+            width:250px;
+            float:left;
+        }
+        #add {
+            position:fixed;
+            right:1em;
+        }
+        @media (max-width: 539px) {
+          #shows > div {
+              margin-left:5px;
+          }
+        }
+        @media (min-width: 540px) {
+            #shows > div {
+                margin-left:20px;
+            }
+        }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+     <!--[if lt IE 9]>
+      <script src=js/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">AlunTv</a>
+          <div id="add">
+              <a class="btn btn-primary" data-toggle="modal" href="#">Add Show&nbsp;<i class="icon-plus icon-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="shows">
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+        <div class="well">
+            <div class="label label-info" style="padding:0.3em">
+                Loremus Ipsemus Maximus
+            </div>
+            <div style="font-size:larger;padding-top:0.2em">
+                <span>2010-01-10</span>
+                <span class="pull-right">07x05</span>
+            </div>
+            <div style="font-size:smaller;padding-top:0.2em">
+                <em>Stranger Things Have Happened</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hide fade" style="display:none" id="addDialog">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Add Show</h3>
+        </div>
+        <div class="modal-body">
+            <form class="well form-search">
+                <input id="searchText" type="text" class="input-medium search-query">
+                <button type="submit" class="btn">Search</button>
+            </form>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>House</td>
+                        <td><a class="btn btn-mini" href="#"><i class="icon-plus"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>sdfawf wt34g34g v433g5g</td>
+                        <td><a class="btn btn-mini" href="#"><i class="icon-plus"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipse 42</td>
+                        <td><a class="btn btn-mini" href="#"><i class="icon-plus"></i></a></td>
+                </tbody>
+            </table>            
+        </div>
+    </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#add a').click(function(e) {
+                e.preventDefault();
+                $('#addDialog').modal('toggle');
+            });
+            $('#addDialog div.modal-footer a').click(function(e) {
+                e.preventDefault();
+                $('#addDialog').modal('hide');
+            });
+            $('#addDialog form.form-search button').click(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url : "http://localhost:52046/api/shows",
+                    data : { name : $('#searchText').val() },
+                    success : function(result) {
+                        console.log(result);
+                    }
+                });
+            });
+        });
+    </script>
+  </body>
+</html>

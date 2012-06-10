@@ -1,7 +1,14 @@
-var app = require('express').createServer();
+var express = require('express');
+var app = express.createServer();
 
-app.get('/', function(req, res){
-    res.send('Hello World');
+//Routes
+app.use("/css", express.static(__dirname + '/client/css'));
+app.use("/js", express.static(__dirname + '/client/js'));
+app.use("/img", express.static(__dirname + '/client/img'));
+app.use("/", express.static(__dirname + '/client/html'));
+
+app.on('close', function() {
+    cn.disconnect();
 });
 
 app.listen(process.env.PORT);
